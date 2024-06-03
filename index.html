@@ -10,44 +10,56 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <article>
-            <nav>
-                <div class="logo">
-                    <img src="./assets/images/Catch.svg" alt="logo">
-                    <p>Catch</p>
+ <main>
+  <article>
+      <nav>
+          <div class="logo">
+              <img src="./assets/images/Catch.svg" alt="logo">
+              <p>Catch</p>
+          </div>
+          <div class="links">
+              <a href="#">Home</a>
+              <a href="#">Products</a>
+              <a href="#">App</a>
+              <a href="#">Join our gym's</a>
+          </div>
+      </nav>
+      <section>
+          <div class="title">
+              <p>START FOR FREE</p>
+              <h1>Create a new account</h1>
+              <p>Already a member? <a href="#">Log in</a></p>
+          </div>
+          <form action="" method="post">
+              <label for="Name" class="input name">Name
+                  <input  type="text" name="Name" id="Name" placeholder="Your name" required> 
+              </label>
+              <label for="LName" class="input Lname">Last Name
+                  <input type="text" name="LastName" id="LName" placeholder="Your last name" required> 
+              </label>
+              <label for="Mail" class="input mail" >
+               <div>
+                  <p>Mail</p>
+                  <input type="email" name="Mail" id="Mail" placeholder="someone123@example.com" required>
                 </div>
-                <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">Products</a>
-                    <a href="#">App</a>
-                    <a href="#">Join our gym's</a>
+                <picture class="icon">
+                    <img src="./assets/images/mail.svg" alt="icon">
+                </picture>
+              </label>
+              <label for="pass" class="input password" >
+               <div>
+                  <p>Password</p>
+                  <input type="password" name="pass" id="pass" placeholder="Create a secure password" required>
                 </div>
-            </nav>
-            <section>
-                <div class="title">
-                    <p>START FOR FREE</p>
-                    <h1>Create a new account</h1>
-                    <p>Already a member? <a href="#">Log in</a></p>
-                </div>
-                <form action="" method="post">
-                    <label for="Name" class="input name">Name
-                        <input  type="text" name="Name" id="Name" placeholder="Your name" required> 
-                    </label>
-                    <label for="LName" class="input Lname" >Last Name
-                        <input type="text" name="LastName" id="LName" placeholder="Your last name" required> 
-                    </label>
-                    <label for="Mail" class="input mail" > Mail
-                        <input type="email" name="Mail" id="Mail" placeholder="someone123@example.com" required> 
-                    </label>
-                    <label for="pass" class="input password" >Password
-                        <input type="password" name="pass" id="pass" placeholder="Create a secure password" required> 
-                    </label>
-                    <button class="input submit" type="submit"><p>Create Account</p></button>
-                </form>
-            </section>
-        </article>
-        <img src="./assets/images/fitguy.jpeg" alt="fitness">
-    </main>
+                <picture class="icon">
+                    <img src="./assets/images/pass-invisible.svg" alt="icon">
+                </picture>
+              </label>
+              <button class="input submit" type="submit"><p>Create Account</p></button>
+          </form>
+      </section>
+  </article>
+  <img src="./assets/images/fitguy.jpeg" alt="fitness">
+ </main>
 </body>
 </html>
