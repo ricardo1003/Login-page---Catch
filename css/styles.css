@@ -1,9 +1,10 @@
 body{
     margin: 0;
-    height: 100vh; width: 100vw;
+    min-height: 100vh;
     position: relative;
 
     background: linear-gradient(45.94deg, #000000 22.49%, #101010 75.74%);
+    background-size: cover;
 
     color: white;
     font-family: "Poppins";
@@ -11,19 +12,27 @@ body{
 }
 main{
     display: flex;
-    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
 }
 article{
-    width: 100%;
-    padding: 60px 128px;
+    position: relative;
+    box-sizing: border-box;
+    width: 52%;
+    padding: 60px 11.25vw;
 }
 nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 nav .logo{
     display: flex;
+}
+nav .logo img{
+    max-width: 16px;
+    max-height: 21px;
 }
 nav .logo p{
     margin: 0 12px;
@@ -36,6 +45,7 @@ nav .links{
     gap: 32px;
 }
 nav .links a{
+    text-wrap: nowrap;
     text-decoration: none;
     color: hsla(0, 0%, 100%, 50%);
 }
@@ -44,6 +54,7 @@ section{
 }
 section .title > :nth-child(n){
     margin: 0;
+    text-wrap: nowrap;
 }
 section .title > :first-child{
     color: hsla(0, 0%, 100%, 75%);
@@ -55,6 +66,7 @@ section .title > :nth-child(2){
     font-weight: 600;
     font-size: 39.06px;
     line-height: 58.59px;
+    text-wrap: wrap;
 }
 section .title > :nth-child(3){
     font-size: 20px;
@@ -65,11 +77,13 @@ section .title > :nth-child(3) a{
     color: #1992FA;
 }
 section form{
+    box-sizing: border-box;
     font-size: 14px;
     margin-top: 62px;
     display: grid;
+    column-width: 10%;
+    grid-template-columns: repeat(2, 50%);
     gap:24px;
-    grid-template-columns: repeat(2, 1fr);
 }
 section form .input{
     height: 64px;
@@ -161,8 +175,15 @@ section form .submit p{
     margin: 0 auto;
     font-size: 14px;
 }
-main > img{
-    max-width: 687px;
+main > div{
+    width: 48vw;
+    min-height: 100vh;
+    grid-column: 2/3;
+    background: url("../assets/images/fitguy.jpeg");
+    background-size: cover;
+}
+main div> img{
+    /* max-width: 100%; */
 }
 
  /*
