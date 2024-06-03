@@ -129,6 +129,30 @@ section form .submit{
     color: white;
     font-weight: 600;
 }
+section form .toggle{
+    display: none;
+}
+section form .password .toggle:not(:checked) ~ .icon{
+    width: 22px;
+    height: 19px;
+    background: url("../assets/images/pass-invisible.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+section form .password .toggle:checked ~ .icon{
+    width: 22px;
+    height: 19px;
+    background: url("../assets/images/pass-visible.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section form .password .toggle:not(:checked) ~ div input{
+   input-security: disc;
+}
+section form .password .toggle:checked ~ div input{
+    input-security: none;
+ }
+
 section form .submit:hover{
     background-color: hsla(48, 97%, 54%, 75%);
     color: #101010;
