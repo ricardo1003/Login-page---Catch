@@ -5,6 +5,7 @@ position: relative;
 background: linear-gradient(45.94deg, #000000 22.49%, #101010 75.74%);
 
 color: white;
+font-family: "Poppins";
 }
 main{
     display: flex;
@@ -18,18 +19,16 @@ nav{
     justify-content: space-between;
 }
 nav .logo{
-    /* width: 0; */
     display: flex;
-    /* width: max-content; */
 }
 nav .logo p{
     margin: 0 12px;
-    /* margin-left: 12px; */
 }
 nav .links{
-    width: 331px;
+    /* width: 331px; */
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 }
 nav .links a{
     text-decoration: none;
