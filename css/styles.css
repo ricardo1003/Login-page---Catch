@@ -147,11 +147,11 @@ section form .password .toggle:checked ~ .icon{
     background-size: cover;
 }
 section form .password .toggle:not(:checked) ~ div input{
-   input-security: disc;
+   -webkit-text-security: disc;
 }
 section form .password .toggle:checked ~ div input{
-    input-security: none;
- }
+    -webkit-text-security: none;
+}
 
 section form .submit:hover{
     background-color: hsla(48, 97%, 54%, 75%);
